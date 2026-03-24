@@ -7,7 +7,7 @@ type BiographyClosingProps = {
 export default function BiographyClosing({ content }: BiographyClosingProps) {
   return (
     <section className="bio-closing">
-      <div className="container bio-body">
+      <div className="container bio-closing__inner">
         <h2 className="bio-closing__title">{content.title}</h2>
         {content.paragraphs.map((para, i) => (
           <p key={i}>{para}</p>
