@@ -11,6 +11,12 @@ type WorksEntry = {
   note: string
 }
 
+type RelatedBookEntry = {
+  title: string
+  type: string
+  note: string
+}
+
 export type WorksPageContent = {
   metadata: {
     title: string
@@ -35,6 +41,12 @@ export type WorksPageContent = {
     title: string
     intro: string
     items: WorksEntry[]
+  }
+  relatedBooks: {
+    label: string
+    title: string
+    intro: string
+    items: RelatedBookEntry[]
   }
   roadmap: {
     label: string
@@ -126,6 +138,29 @@ const worksContent: Record<Locale, WorksPageContent> = {
           title: 'History of Civilizations of Central Asia',
           year: 'UNESCO era',
           note: 'A major international scholarly undertaking with which his name remains closely associated.',
+        },
+      ],
+    },
+    relatedBooks: {
+      label: 'Books About Osimi',
+      title: 'Biographical and Memorial Publications',
+      intro:
+        'This distinct subsection is reserved for books written about Muhammad Osimi after his lifetime, including biographies, interview collections, memorial volumes, and later scholarly studies. It is kept separate from his own authored works so the bibliography remains clear.',
+      items: [
+        {
+          title: 'Biographical studies on Muhammad Osimi',
+          type: 'Biography / study',
+          note: 'Placeholder for dedicated books that reconstruct his life, scholarly role, and historical significance.',
+        },
+        {
+          title: 'Interview and remembrance collections',
+          type: 'Interviews / memorial collection',
+          note: 'Placeholder for volumes gathering memories, interviews, and reflections by family members, colleagues, students, and public figures.',
+        },
+        {
+          title: 'Posthumous scholarship and commemorative volumes',
+          type: 'Edited volume / research collection',
+          note: 'Placeholder for later academic books, commemorative editions, and collected studies on Osimi’s legacy.',
         },
       ],
     },
@@ -245,6 +280,29 @@ const worksContent: Record<Locale, WorksPageContent> = {
         },
       ],
     },
+    relatedBooks: {
+      label: 'Китобҳо дар бораи Осимӣ',
+      title: 'Нашрияҳои зиндагиномавӣ ва ёдбудӣ',
+      intro:
+        'Ин зербахш барои китобҳое пешбинӣ шудааст, ки баъд аз зиндагии Муҳаммад Осимӣ дар бораи ӯ навишта шудаанд: зиндагиномаҳо, маҷмуаҳои мусоҳиба, китобҳои ёдбуд ва пажӯҳишҳои баъдӣ. Он қасдан аз осори худи ӯ ҷудо нигоҳ дошта мешавад, то библиография равшан бимонад.',
+      items: [
+        {
+          title: 'Пажӯҳишҳои зиндагиномавӣ дар бораи Муҳаммад Осимӣ',
+          type: 'Зиндагинома / пажӯҳиш',
+          note: 'Ҷой барои китобҳое, ки зиндагӣ, нақши илмӣ ва аҳамияти таърихии ӯро бозсозӣ мекунанд.',
+        },
+        {
+          title: 'Маҷмуаҳои мусоҳиба ва хотира',
+          type: 'Мусоҳибаҳо / маҷмуаи ёдбуд',
+          note: 'Ҷой барои китобҳое, ки хотираҳо, мусоҳибаҳо ва андешаҳои аъзои хонавода, ҳамкорон, шогирдон ва шахсиятҳои ҷамъиятиро гирд меоранд.',
+        },
+        {
+          title: 'Пажӯҳишҳои баъдӣ ва ҷилдҳои ёдбудӣ',
+          type: 'Маҷмуаи таҳриршуда / пажӯҳишӣ',
+          note: 'Ҷой барои китобҳои академӣ, нашрияҳои ёдбудӣ ва таҳқиқоти ҷамъбастӣ дар бораи мероси Осимӣ.',
+        },
+      ],
+    },
     roadmap: {
       label: 'Самти рушд',
       title: 'Ин саҳифа ба чӣ табдил хоҳад ёфт',
@@ -358,6 +416,29 @@ const worksContent: Record<Locale, WorksPageContent> = {
           title: 'История цивилизаций Центральной Азии',
           year: 'Период ЮНЕСКО',
           note: 'Крупное международное научное предприятие, с которым его имя остается тесно связано.',
+        },
+      ],
+    },
+    relatedBooks: {
+      label: 'Книги об Осими',
+      title: 'Биографические и мемориальные издания',
+      intro:
+        'Этот подраздел предназначен для книг, написанных о Мухаммаде Осими уже после его жизни: биографий, сборников интервью, мемориальных изданий и последующих исследований. Он сознательно отделен от его собственных трудов, чтобы библиография оставалась ясной.',
+      items: [
+        {
+          title: 'Биографические исследования о Мухаммаде Осими',
+          type: 'Биография / исследование',
+          note: 'Место для книг, реконструирующих его жизнь, научную роль и историческое значение.',
+        },
+        {
+          title: 'Сборники интервью и воспоминаний',
+          type: 'Интервью / мемориальный сборник',
+          note: 'Место для изданий, собирающих воспоминания, интервью и размышления членов семьи, коллег, учеников и общественных деятелей.',
+        },
+        {
+          title: 'Посмертные исследования и памятные тома',
+          type: 'Составной том / исследовательский сборник',
+          note: 'Место для более поздних академических книг, памятных выпусков и собраний исследований о наследии Осими.',
         },
       ],
     },

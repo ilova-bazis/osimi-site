@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import ContinueExploring from '@/components/shared/ContinueExploring'
 import type { ArchivePageContent } from '@/content/archive'
 import type { Locale } from '@/lib/i18n/locales'
@@ -90,37 +92,78 @@ export default function ArchivePage({ locale, content }: ArchivePageProps) {
 
                 {item.variant === 'documents' ? (
                   <div className="archive-collection-card__mock" aria-hidden="true">
+                    {item.previewDocument ? (
+                      <div className="archive-document-preview">
+                        <Image
+                          src={item.previewDocument.src}
+                          alt={item.previewDocument.alt}
+                          className="archive-document-preview__image"
+                          width={760}
+                          height={520}
+                        />
+                        <span className="archive-document-preview__caption">{item.previewDocument.caption}</span>
+                      </div>
+                    ) : null}
                     <div className="archive-collection-card__mock-bar" />
                     <div className="archive-collection-card__mock-grid">
-                      {item.sampleItems.map((sample) => (
-                        <div className="archive-collection-card__mock-item" key={sample}>
-                          <div className="archive-collection-card__mock-thumb" />
-                          <span>{sample}</span>
+                      {item.documentRecords?.map((record) => (
+                        <div className="archive-collection-card__record" key={record.title}>
+                          <div className="archive-collection-card__record-main">
+                            <span className="archive-collection-card__record-title">{record.title}</span>
+                            <span className="archive-collection-card__record-meta">{record.meta}</span>
+                          </div>
+                          <span className="archive-collection-card__record-status">{record.status}</span>
                         </div>
                       ))}
                     </div>
                   </div>
                 ) : (
-                  <div className="archive-gallery-mock" aria-hidden="true">
+                  <div className="archive-gallery-preview">
                     <div className="archive-gallery-mock__featured">
-                      <div className="archive-gallery-mock__hero" />
+                      {item.previewImages?.[0] ? (
+                        <Image
+                          src={item.previewImages[0].src}
+                          alt={item.previewImages[0].alt}
+                          className="archive-gallery-mock__hero-image"
+                          width={760}
+                          height={420}
+                        />
+                      ) : (
+                        <div className="archive-gallery-mock__hero" aria-hidden="true" />
+                      )}
                       <div className="archive-gallery-mock__featured-copy">
                         <span className="archive-gallery-mock__featured-tag">Featured image</span>
-                        <span className="archive-gallery-mock__featured-title">{item.sampleItems[0]}</span>
-                        <span className="archive-gallery-mock__featured-meta">Caption, date, and collection note</span>
+                        <span className="archive-gallery-mock__featured-title">
+                          {item.previewImages?.[0]?.caption ?? item.sampleItems[0]}
+                        </span>
+                        <span className="archive-gallery-mock__featured-meta">Archive gallery preview</span>
                       </div>
                     </div>
                     <div className="archive-gallery-mock__grid">
-                      {item.sampleItems.slice(1).map((sample) => (
-                        <div className="archive-gallery-mock__tile" key={sample}>
-                          <div className="archive-gallery-mock__image" />
-                          <span className="archive-gallery-mock__tile-title">{sample}</span>
-                          <span className="archive-gallery-mock__tile-meta">Caption preview</span>
+                      {item.previewImages?.slice(1).map((image) => (
+                        <div className="archive-gallery-mock__tile" key={image.src}>
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            className="archive-gallery-mock__image-real"
+                            width={320}
+                            height={240}
+                          />
+                          <span className="archive-gallery-mock__tile-title">{image.caption}</span>
+                          <span className="archive-gallery-mock__tile-meta">Gallery item</span>
                         </div>
                       ))}
                     </div>
                   </div>
                 )}
+
+                {item.href && item.ctaLabel ? (
+                  <div className="archive-collection-card__footer">
+                    <Link href={`/${locale}${item.href}`} className="archive-collection-card__link">
+                      {item.ctaLabel}
+                    </Link>
+                  </div>
+                ) : null}
               </article>
             ))}
           </div>

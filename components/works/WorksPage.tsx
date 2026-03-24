@@ -75,6 +75,28 @@ export default function WorksPage({ locale, content }: WorksPageProps) {
         </div>
       </section>
 
+      <section className="works-related-books section section--white" aria-labelledby="works-related-books-title">
+        <div className="container">
+          <div className="works-selected__intro">
+            <p className="label">{content.relatedBooks.label}</p>
+            <h2 className="section-title" id="works-related-books-title">
+              {content.relatedBooks.title}
+            </h2>
+            <p className="section-body">{content.relatedBooks.intro}</p>
+          </div>
+
+          <div className="works-related-books__grid">
+            {content.relatedBooks.items.map((item) => (
+              <article className="works-related-book-card" key={item.title}>
+                <p className="works-related-book-card__type">{item.type}</p>
+                <h3 className="works-related-book-card__title">{item.title}</h3>
+                <p className="works-related-book-card__note">{item.note}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="works-roadmap section section--ivory" aria-labelledby="works-roadmap-title">
         <div className="container works-roadmap__inner">
           <div className="works-roadmap__copy">

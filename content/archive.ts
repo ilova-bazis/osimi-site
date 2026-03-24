@@ -36,6 +36,11 @@ export type ArchivePageContent = {
       countLabel: string
       description: string
       sampleItems: string[]
+      previewDocument?: { src: string; alt: string; caption: string }
+      previewImages?: Array<{ src: string; alt: string; caption: string }>
+      documentRecords?: Array<{ title: string; meta: string; status: string }>
+      href?: string
+      ctaLabel?: string
     }>
   }
   importance: {
@@ -127,6 +132,33 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Working papers and scholarly notes',
             'Letters and institutional correspondence',
           ],
+          previewDocument: {
+            src: 'https://osimi.org/wp-content/uploads/2020/08/attestat_professora.jpg',
+            alt: 'Professor diploma scan',
+            caption: 'Professor diploma scan',
+          },
+          documentRecords: [
+            {
+              title: 'Professor diploma scan',
+              meta: 'Academic record · source image preserved on legacy site',
+              status: 'Preview',
+            },
+            {
+              title: 'Public speeches and addresses',
+              meta: 'Series structure · dates to be verified',
+              status: 'Cataloging',
+            },
+            {
+              title: 'Working papers and scholarly notes',
+              meta: 'Research material · contextual notes pending',
+              status: 'Processing',
+            },
+            {
+              title: 'Letters and institutional correspondence',
+              meta: 'Institutional record group · access preview later',
+              status: 'Planned',
+            },
+          ],
         },
         {
           variant: 'gallery',
@@ -141,6 +173,30 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Institutional and public events',
             'Commemorative gatherings and screenings',
           ],
+          previewImages: [
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1956-1964/thumb/CP_IMG_20171014_0621.jpg',
+              alt: 'On the meeting of Academy of Science',
+              caption: 'On the meeting of Academy of Science',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170924_0216.jpg',
+              alt: 'Tajik scientists',
+              caption: 'Tajik scientists',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170923_0127.jpg',
+              alt: 'Celebration of Amir Khusrow Dehlavi anniversary',
+              caption: 'Celebration of Amir Khusrow Dehlavi anniversary',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170922_0070.jpg',
+              alt: 'At home with son',
+              caption: 'At home with son',
+            },
+          ],
+          href: '/archive/gallery',
+          ctaLabel: 'Open Gallery Preview',
         },
       ],
     },
@@ -221,6 +277,33 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Қоғазҳои корӣ ва ёддоштҳои илмӣ',
             'Номаҳо ва мукотибаи муассисавӣ',
           ],
+          previewDocument: {
+            src: 'https://osimi.org/wp-content/uploads/2020/08/attestat_professora.jpg',
+            alt: 'Скани дипломи профессор',
+            caption: 'Скани дипломи профессор',
+          },
+          documentRecords: [
+            {
+              title: 'Скани дипломи профессор',
+              meta: 'Сабти академӣ · тасвири манбаъ аз сомонаи меросӣ',
+              status: 'Пешнамоиш',
+            },
+            {
+              title: 'Суханрониҳо ва муроҷиатҳои ҷамъиятӣ',
+              meta: 'Силсилаи мавод · санаҳо дар ҳоли санҷиш',
+              status: 'Феҳристсозӣ',
+            },
+            {
+              title: 'Қоғазҳои корӣ ва ёддоштҳои илмӣ',
+              meta: 'Маводи пажӯҳишӣ · тавзеҳоти заминавӣ баъдтар',
+              status: 'Коркард',
+            },
+            {
+              title: 'Номаҳо ва мукотибаи муассисавӣ',
+              meta: 'Гурӯҳи сабтҳои муассисавӣ · пешнамоиш баъдтар',
+              status: 'Дар нақша',
+            },
+          ],
         },
         {
           variant: 'gallery',
@@ -235,6 +318,30 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Рӯйдодҳои ҷамъиятӣ ва муассисавӣ',
             'Ёдбудҳо ва намоишҳои дерина',
           ],
+          previewImages: [
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1956-1964/thumb/CP_IMG_20171014_0621.jpg',
+              alt: 'Маҷлиси Академияи илмҳо',
+              caption: 'Дар маҷлиси Академияи илмҳо',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170924_0216.jpg',
+              alt: 'Олимони тоҷик',
+              caption: 'Олимони тоҷик',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170923_0127.jpg',
+              alt: 'Ҷашни Амир Хусрави Деҳлавӣ',
+              caption: 'Ҷашни Амир Хусрави Деҳлавӣ',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170922_0070.jpg',
+              alt: 'Дар хона бо писар',
+              caption: 'Дар хона бо писар',
+            },
+          ],
+          href: '/archive/gallery',
+          ctaLabel: 'Кушодани пешнамоиши галерея',
         },
       ],
     },
@@ -315,6 +422,33 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Рабочие материалы и научные заметки',
             'Письма и институциональная переписка',
           ],
+          previewDocument: {
+            src: 'https://osimi.org/wp-content/uploads/2020/08/attestat_professora.jpg',
+            alt: 'Скан диплома профессора',
+            caption: 'Скан диплома профессора',
+          },
+          documentRecords: [
+            {
+              title: 'Скан диплома профессора',
+              meta: 'Академическая запись · исходное изображение сохранено на старом сайте',
+              status: 'Превью',
+            },
+            {
+              title: 'Публичные выступления и обращения',
+              meta: 'Серия материалов · даты уточняются',
+              status: 'Каталогизация',
+            },
+            {
+              title: 'Рабочие материалы и научные заметки',
+              meta: 'Исследовательский блок · контекст будет добавлен',
+              status: 'Обработка',
+            },
+            {
+              title: 'Письма и институциональная переписка',
+              meta: 'Институциональная группа записей · превью позже',
+              status: 'Запланировано',
+            },
+          ],
         },
         {
           variant: 'gallery',
@@ -329,6 +463,30 @@ const archiveContent: Record<Locale, ArchivePageContent> = {
             'Институциональные и публичные события',
             'Памятные встречи и показы',
           ],
+          previewImages: [
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1956-1964/thumb/CP_IMG_20171014_0621.jpg',
+              alt: 'На заседании Академии наук',
+              caption: 'На заседании Академии наук',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170924_0216.jpg',
+              alt: 'Таджикские ученые',
+              caption: 'Таджикские ученые',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170923_0127.jpg',
+              alt: 'Празднование юбилея Амира Хусрава Дехлави',
+              caption: 'Празднование юбилея Амира Хусрава Дехлави',
+            },
+            {
+              src: 'https://osimi.org/wp-content/uploads/photo-gallery/1965-1988/thumb/CP_IMG_20170922_0070.jpg',
+              alt: 'Дома с сыном',
+              caption: 'Дома с сыном',
+            },
+          ],
+          href: '/archive/gallery',
+          ctaLabel: 'Открыть превью галереи',
         },
       ],
     },
