@@ -58,13 +58,24 @@ const biographyEn: BiographyPageContent = {
                 "He completed his secondary education at the workers' faculty of the Khujand Agricultural Institute (1934–1937), where he received recognition for academic achievement. He then enrolled at the Physics and Mathematics Faculty of the Uzbek State University in Samarkand, graduating in 1941 with the qualification of physicist.",
                 "While still a student, from 1939 to 1941, he taught physics and mathematics at secondary school No. 5 in Samarkand — the beginning of a lifelong dedication to education that would define his public role as much as his scholarship.",
             ],
-            image: {
-                src: "/images/biography/CP_IMG_20170904_0015.jpg",
-                alt: "Monand Osimi with family members holding young children",
-                caption: "Monand Osimi (wife) holding Mustafo; her mother Khonzoda Mahmudova holding Sarvar; Asliddin Osimi (brother) holding Muzaffar.",
-                credit: "Family Archive",
-                placement: "inline-left",
-            },
+            images: [
+                {
+                    src: "/images/biography/CP_IMG_20170904_0015.jpg",
+                    alt: "Monand Osimi with family members holding young children",
+                    caption:
+                        "Monand Osimi (wife) holding Mustafo; her mother Khonzoda Mahmudova holding Sarvar; Asliddin Osimi (brother) holding Muzaffar.",
+                    credit: "Family Archive",
+                    placement: "inline-left",
+                },
+                {
+                    src: "/images/biography/CP_IMG_20170922_0085.jpg",
+                    alt: "Muhammad Osimi with a friend during his student years in Samarkand, 1941",
+                    caption:
+                        "Muhammad Osimi with a friend during his student years. Samarkand, Uzbekistan, 1941.",
+                    credit: "Family Archive",
+                    placement: "inline-right",
+                },
+            ],
         },
         {
             id: "war-service",
@@ -116,6 +127,14 @@ const biographyEn: BiographyPageContent = {
             title: "Academy of Sciences Presidency",
             callout: {
                 text: "Twenty-three years at the helm of the Academy of Sciences — the longest presidency in its history — an era that saw the founding of five major institutions and the completion of the eight-volume Tajik Soviet Encyclopedia.",
+            },
+            image: {
+                src: "/images/biography/CP_IMG_20170906_0041.jpg",
+                alt: "Muhammad Osimi in discussion with a representative of the Academy of Sciences of Afghanistan in Dushanbe, October 1983",
+                caption:
+                    "Muhammad Osimi in discussion with a representative of the Academy of Sciences of Afghanistan. Dushanbe, October 1983.",
+                credit: "Family Archive",
+                placement: "inline-right",
             },
             paragraphs: [
                 "In 1965 Muhammad Asimov was elected a full academician of the Academy of Sciences of the Tajik SSR and simultaneously appointed its President — the position vacated by the distinguished physicist and mechanician Sultan Umarov. He would hold this post for twenty-three years, from 1965 to 1988.",

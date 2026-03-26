@@ -17,6 +17,7 @@ export type BiographySection = {
   paragraphs: string[]
   callout?: BiographySectionCallout
   image?: BiographySectionMedia
+  images?: BiographySectionMedia[]
 }
 
 export type BiographyRelatedLink = {
