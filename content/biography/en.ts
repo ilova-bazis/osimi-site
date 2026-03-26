@@ -107,6 +107,14 @@ const biographyEn: BiographyPageContent = {
             callout: {
                 text: "The institute Asimov built was later renamed the Tajik Technical University in his honor — a recognition extended in his lifetime, a rare distinction among scholars.",
             },
+            image: {
+                src: "/images/biography/CP_IMG_20170924_0164.jpg",
+                alt: "Visit of Indian President Rajendra Prasad to the Tajik Polytechnic Institute in Dushanbe, 1956",
+                caption:
+                    "Visit of Indian President Rajendra Prasad to the Tajik Polytechnic Institute. Dushanbe, Tajikistan, 1956.",
+                credit: "Family Archive",
+                placement: "inline-right",
+            },
             paragraphs: [
                 "In 1956 Muhammad Asimov was appointed the first rector of the newly founded Tajik State Polytechnic Institute in Dushanbe — the first technical institute of independent standing in Tajikistan. He threw himself into its construction: assembling faculty, organizing laboratories and workshops, establishing curricula across three initial faculties, and building the administrative structures of a functioning institution.",
                 "The appointment came at the initiative of Bobojon Gafurov, the leading scholar and political figure of Tajikistan, who recognized in Asimov the rare combination of scientific authority, organizational energy, and civic commitment needed to build something from nothing. The partnership between Gafurov and Asimov — one based in Moscow as director of the Institute of Oriental Studies of the Soviet Academy of Sciences, the other building institutions in Dushanbe — would shape Tajik science and culture for generations.",
@@ -116,6 +124,14 @@ const biographyEn: BiographyPageContent = {
         {
             id: "public-leadership",
             title: "Public Leadership and State Service",
+            image: {
+                src: "/images/biography/CP_IMG_20170926_0249.jpg",
+                alt: "Muhammad Osimi participating in the 72nd Inter-Parliamentary Union Conference in Geneva, 1984",
+                caption:
+                    "Participant in the 72nd Inter-Parliamentary Union Conference. Geneva, Switzerland, September 22-29, 1984.",
+                credit: "Family Archive",
+                placement: "inline-right",
+            },
             paragraphs: [
                 "As Minister of Public Education in 1962, Asimov represented Tajikistan at the UNESCO International Conference on Education in Geneva — his first contact with the organization that would become central to his international work. Later that year he was appointed to a remarkable triple role: Secretary of the Central Committee of the Communist Party of Tajikistan, Deputy Chairman of the Council of Ministers, and Chairman of the Party and State Control Committee — a structure of oversight created during the Khrushchev thaw to address abuses of institutional power.",
                 "He was elected deputy to the Supreme Soviet of the Tajik SSR (6th convocation, 1963–1967) and to the Supreme Soviet of the USSR at multiple convocations, representing constituencies in Tajikistan. He participated in inter-parliamentary delegations to Iran, Italy, Switzerland, Canada, and the United States.",
@@ -148,6 +164,13 @@ const biographyEn: BiographyPageContent = {
             title: "International and UNESCO Work",
             callout: {
                 text: "The six-volume History of Civilizations of Central Asia — published by UNESCO between 1992 and 2005 — remains the most comprehensive international scholarly work on the region ever undertaken.",
+            },
+            image: {
+                src: "/images/biography/CP_IMG_20171014_0560.jpg",
+                alt: "Muhammad Osimi with Miroshnikov in Paris, 1985",
+                caption: "Muhammad Osimi and Miroshnikov. Paris, France, 1985.",
+                credit: "Family Archive",
+                placement: "inline-right",
             },
             paragraphs: [
                 "Asimov's international presence began in earnest with the first major symposium on the Kushan civilization, held in Dushanbe in 1968 under the auspices of the International Association for the Study of the Cultures of Central Asia (IASCCA) — an organization that operated within the UNESCO framework. Asimov co-led the organizing committee alongside Gafurov and brought the full resources of the Tajik Academy to bear on the event.",
