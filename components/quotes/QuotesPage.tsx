@@ -10,8 +10,11 @@ type QuotesPageProps = {
   content: QuotesPageContent
 }
 
+const QUOTES_PER_PAGE = 6
+
 export default function QuotesPage({ locale, content }: QuotesPageProps) {
   const [selectedTheme, setSelectedTheme] = useState<QuoteTheme | null>(null)
+  const [currentPage, setCurrentPage] = useState(1)
 
   const filteredQuotes = useMemo(() => {
     if (!selectedTheme) {
@@ -20,6 +23,12 @@ export default function QuotesPage({ locale, content }: QuotesPageProps) {
 
     return content.collection.items.filter((item) => item.theme === selectedTheme)
   }, [content.collection.items, selectedTheme])
+
+  const totalPages = Math.max(1, Math.ceil(filteredQuotes.length / QUOTES_PER_PAGE))
+  const safePage = Math.min(currentPage, totalPages)
+  const startIndex = (safePage - 1) * QUOTES_PER_PAGE
+  const endIndex = Math.min(startIndex + QUOTES_PER_PAGE, filteredQuotes.length)
+  const paginatedQuotes = filteredQuotes.slice(startIndex, endIndex)
 
   return (
     <>
@@ -61,7 +70,10 @@ export default function QuotesPage({ locale, content }: QuotesPageProps) {
                 type="button"
                 key={item.key}
                 className={`quotes-theme-card${selectedTheme === item.key ? ' is-active' : ''}`}
-                onClick={() => setSelectedTheme((current) => (current === item.key ? null : item.key))}
+                onClick={() => {
+                  setCurrentPage(1)
+                  setSelectedTheme((current) => (current === item.key ? null : item.key))
+                }}
                 aria-pressed={selectedTheme === item.key}
               >
                 <p className="quotes-theme-card__title">{item.label}</p>
@@ -87,19 +99,25 @@ export default function QuotesPage({ locale, content }: QuotesPageProps) {
               <button
                 type="button"
                 className={`quotes-filter${selectedTheme === null ? ' is-active' : ''}`}
-                onClick={() => setSelectedTheme(null)}
+                onClick={() => {
+                  setCurrentPage(1)
+                  setSelectedTheme(null)
+                }}
                 aria-pressed={selectedTheme === null}
               >
                 {content.collection.allLabel}
               </button>
               {content.themes.items.map((item) => (
                 <button
-                  type="button"
-                  key={item.key}
-                  className={`quotes-filter${selectedTheme === item.key ? ' is-active' : ''}`}
-                  onClick={() => setSelectedTheme(item.key)}
-                  aria-pressed={selectedTheme === item.key}
-                >
+                    type="button"
+                    key={item.key}
+                    className={`quotes-filter${selectedTheme === item.key ? ' is-active' : ''}`}
+                    onClick={() => {
+                      setCurrentPage(1)
+                      setSelectedTheme(item.key)
+                    }}
+                    aria-pressed={selectedTheme === item.key}
+                  >
                   {item.label}
                 </button>
               ))}
@@ -108,7 +126,7 @@ export default function QuotesPage({ locale, content }: QuotesPageProps) {
 
           <div className="quotes-collection__grid">
             {filteredQuotes.length ? (
-              filteredQuotes.map((quote) => (
+              paginatedQuotes.map((quote) => (
                 <article className="quote-entry" key={quote.id}>
                   <span className="quote-entry__mark" aria-hidden="true">
                     &ldquo;
@@ -124,6 +142,56 @@ export default function QuotesPage({ locale, content }: QuotesPageProps) {
               <p className="quotes-collection__empty">{content.collection.emptyLabel}</p>
             )}
           </div>
+
+          {filteredQuotes.length ? (
+            <div className="quotes-pagination">
+              <p className="quotes-pagination__summary">
+                {content.collection.showingLabel} {startIndex + 1}-{endIndex} {content.collection.ofLabel}{' '}
+                {filteredQuotes.length}
+              </p>
+
+              {totalPages > 1 ? (
+                <nav className="quotes-pagination__controls" aria-label={`${content.collection.pageLabel} navigation`}>
+                  <button
+                    type="button"
+                    className="quotes-pagination__button"
+                    onClick={() => setCurrentPage((page) => Math.max(1, page - 1))}
+                    disabled={safePage === 1}
+                  >
+                    {content.collection.previousLabel}
+                  </button>
+
+                  <div className="quotes-pagination__pages">
+                    {Array.from({ length: totalPages }, (_, index) => {
+                      const page = index + 1
+
+                      return (
+                        <button
+                          type="button"
+                          key={page}
+                          className={`quotes-pagination__page${safePage === page ? ' is-active' : ''}`}
+                          onClick={() => setCurrentPage(page)}
+                          aria-current={safePage === page ? 'page' : undefined}
+                          aria-label={`${content.collection.pageLabel} ${page}`}
+                        >
+                          {page}
+                        </button>
+                      )
+                    })}
+                  </div>
+
+                  <button
+                    type="button"
+                    className="quotes-pagination__button"
+                    onClick={() => setCurrentPage((page) => Math.min(totalPages, page + 1))}
+                    disabled={safePage === totalPages}
+                  >
+                    {content.collection.nextLabel}
+                  </button>
+                </nav>
+              ) : null}
+            </div>
+          ) : null}
         </div>
       </section>
 

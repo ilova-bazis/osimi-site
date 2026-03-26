@@ -149,7 +149,7 @@ const homeContent: Record<Locale, HomePageContent> = {
       ],
       footerBottom: 'Muhammad Osimi Legacy Project · All rights reserved',
       languageSwitcherLabel: 'Switch language',
-      localeLabels: { en: 'EN', tg: 'TG', ru: 'RU' },
+      localeLabels: { en: 'English', tg: 'Тоҷикӣ', ru: 'Русский' },
     },
     hero: {
       eyebrow: '1920 - 1996 • Khujand, Tajikistan',
@@ -311,7 +311,7 @@ const homeContent: Record<Locale, HomePageContent> = {
       footerTaglineLines: ['Пос доштани ҳаёт ва мероси Муҳаммад Осимӣ', 'барои наслҳои оянда.'],
       footerBottom: 'Лоиҳаи мероси Муҳаммад Осимӣ · Ҳамаи ҳуқуқҳо ҳифз шудаанд',
       languageSwitcherLabel: 'Забонро иваз кунед',
-      localeLabels: { en: 'EN', tg: 'TG', ru: 'RU' },
+      localeLabels: { en: 'English', tg: 'Тоҷикӣ', ru: 'Русский' },
     },
     hero: {
       eyebrow: '1920 - 1996 • Хуҷанд, Тоҷикистон',
@@ -458,7 +458,7 @@ const homeContent: Record<Locale, HomePageContent> = {
       footerTaglineLines: ['Сохраняя жизнь и наследие Мухаммада Осими', 'для будущих поколений.'],
       footerBottom: 'Проект наследия Мухаммада Осими · Все права защищены',
       languageSwitcherLabel: 'Сменить язык',
-      localeLabels: { en: 'EN', tg: 'TG', ru: 'RU' },
+      localeLabels: { en: 'English', tg: 'Тоҷикӣ', ru: 'Русский' },
     },
     hero: {
       eyebrow: '1920 - 1996 • Худжанд, Таджикистан',

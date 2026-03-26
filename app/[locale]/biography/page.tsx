@@ -69,6 +69,7 @@ export default async function BiographyPage({ params }: Props) {
                             key={section.id}
                             section={section}
                             index={i}
+                            locale={locale}
                         />
                     ))}
                 </div>

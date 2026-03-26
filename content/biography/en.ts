@@ -59,9 +59,9 @@ const biographyEn: BiographyPageContent = {
                 "While still a student, from 1939 to 1941, he taught physics and mathematics at secondary school No. 5 in Samarkand — the beginning of a lifelong dedication to education that would define his public role as much as his scholarship.",
             ],
             image: {
-                src: "/images/biogprahy/CP_IMG_20170904_0015.jpg",
-                alt: "Muhammad Asimov in his early years",
-                caption: "Muhammad Asimov in his early years",
+                src: "/images/biography/CP_IMG_20170904_0015.jpg",
+                alt: "Monand Osimi with family members holding young children",
+                caption: "Monand Osimi (wife) holding Mustafo; her mother Khonzoda Mahmudova holding Sarvar; Asliddin Osimi (brother) holding Muzaffar.",
                 credit: "Family Archive",
                 placement: "inline-left",
             },

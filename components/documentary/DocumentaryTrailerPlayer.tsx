@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
+import MediaViewer, { type MediaViewerItem } from '@/components/shared/MediaViewer'
 
 type DocumentaryTrailerPlayerProps = {
   title: string
@@ -42,27 +43,16 @@ export default function DocumentaryTrailerPlayer({
 }: DocumentaryTrailerPlayerProps) {
   const [isOpen, setIsOpen] = useState(false)
 
-  useEffect(() => {
-    if (!isOpen) {
-      return undefined
-    }
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsOpen(false)
-      }
-    }
-
-    document.body.style.overflow = 'hidden'
-    window.addEventListener('keydown', onKeyDown)
-
-    return () => {
-      document.body.style.overflow = ''
-      window.removeEventListener('keydown', onKeyDown)
-    }
-  }, [isOpen])
-
   const thumbnail = useMemo(() => getYoutubeThumbnail(trailerHref), [trailerHref])
+  const trailerItem = useMemo<MediaViewerItem>(
+    () => ({
+      kind: 'video',
+      embedSrc: trailerEmbedHref,
+      title,
+      caption: trailerLabel,
+    }),
+    [title, trailerEmbedHref, trailerLabel],
+  )
 
   return (
     <>
@@ -90,36 +80,7 @@ export default function DocumentaryTrailerPlayer({
           </span>
         </button>
       </div>
-
-      {isOpen ? (
-        <div className="documentary-trailer-modal" role="dialog" aria-modal="true" aria-label={title}>
-          <button
-            type="button"
-            className="documentary-trailer-modal__backdrop"
-            onClick={() => setIsOpen(false)}
-            aria-label={closeLabel}
-          />
-          <div className="documentary-trailer-modal__panel">
-            <button
-              type="button"
-              className="documentary-trailer-modal__close"
-              onClick={() => setIsOpen(false)}
-              aria-label={closeLabel}
-            >
-              {closeLabel}
-            </button>
-            <div className="documentary-trailer-modal__frame">
-              <iframe
-                src={trailerEmbedHref}
-                title={title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </div>
-      ) : null}
+      <MediaViewer item={isOpen ? trailerItem : null} closeLabel={closeLabel} onClose={() => setIsOpen(false)} />
     </>
   )
 }
