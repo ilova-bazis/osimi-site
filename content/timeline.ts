@@ -152,9 +152,9 @@ const timelineEntries: CuratedTimelineEntry[] = [
         category: "life",
         major: true,
         body: {
-            en: "Born on August 25 in Khujand, in the family of a peasant.",
-            ru: "Родился 25 августа в Худжанде, в семье крестьянина.",
-            tg: "25 август дар шаҳри Хуҷанд, дар оилаи деҳқон таваллуд шуд.",
+            en: "Born on August 25, 1920 in Khujand, in the family of a peasant.",
+            ru: "Родился 25 августа 1920 года в Худжанде, в семье крестьянина.",
+            tg: "25 августи соли 1920 дар шаҳри Хуҷанд, дар оилаи деҳқон таваллуд шуд.",
         },
     },
     {
@@ -191,7 +191,7 @@ const timelineEntries: CuratedTimelineEntry[] = [
         body: {
             en: "Studies at the Physics and Mathematics Faculty of the Uzbek State University named after A. Navoi in Samarkand and qualifies as a physicist in 1941.",
             ru: "Учится на физико-математическом факультете Узбекского государственного университета имени А. Навои в Самарканде и в 1941 году получает квалификацию физика.",
-            tg: "Дар факултаи физика ва математикаи Донишгоҳи давлатии ӯзбекистон ба номи А. Навоӣ дар Самарқанд таҳсил карда, соли 1941 ихтисоси физик мегирад.",
+            tg: "Дар факултаи физика ва математикаи Донишгоҳи давлатии Ӯзбекистон ба номи А. Навоӣ дар Самарқанд таҳсил карда, соли 1941 ихтисоси физик мегирад.",
         },
     },
     {
@@ -222,15 +222,15 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
         notes: {
             en: [
-                "Awarded the Order of the Patriotic War, 1st degree, and the medal “For the Defense of Leningrad.”",
+                "Awarded the medal “For the Defense of Leningrad” and decorated with the Order of the Patriotic War, 1st degree.",
                 "Joins the Communist Party in 1945 and receives the medal “For Victory over Germany in the Great Patriotic War 1941-1945.”",
             ],
             ru: [
-                "Награжден орденом Отечественной войны I степени и медалью «За оборону Ленинграда».",
+                "Награжден медалью «За оборону Ленинграда» и орденом Отечественной войны I степени.",
                 "Вступает в КПСС в 1945 году и получает медаль «За победу над Германией в Великой Отечественной войне 1941-1945 гг.».",
             ],
             tg: [
-                "Бо ордени Ҷанги Ватании дараҷаи якум ва медали «Барои мудофиаи Ленинград» сарфароз мегардад.",
+                "Бо медали «Барои мудофиаи Ленинград» ва ордени Ҷанги Ватании дараҷаи якум сарфароз мегардад.",
                 "Соли 1945 ба сафи КПСС дохил шуда, бо медали «Барои Ғалаба бар Германия дар Ҷанги Бузурги Ватании солҳои 1941-1945» мукофотонида мешавад.",
             ],
         },
@@ -250,15 +250,15 @@ const timelineEntries: CuratedTimelineEntry[] = [
     },
     {
         id: "knowledge-society-1947",
-        displayYear: "1947",
-        startYear: 1947,
+        displayYear: "1949",
+        startYear: 1949,
         category: "government",
         major: false,
         foldGroup: "formation-years",
         body: {
-            en: "Becomes a member of the Knowledge Society of the Tajik SSR and is awarded the Order of the Honor.",
-            ru: "Становится членом общества «Знание» Таджикской ССР и награждается орденом «Знак Почета».",
-            tg: "Узви ҷамъияти «Дониш»-и ҶШС Тоҷикистон шуда, бо ордени Нишони Фахрӣ сарфароз мегардад.",
+            en: "Receives the Order of the Badge of Honor.",
+            ru: "Награждается орденом «Знак Почета».",
+            tg: "Бо ордени «Нишони Фахрӣ» сарфароз мегардад.",
         },
     },
     {
@@ -286,6 +286,19 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
     },
     {
+        id: "delegate-rsfsr-1954",
+        displayYear: "1954",
+        startYear: 1954,
+        category: "government",
+        major: false,
+        foldGroup: "formation-years",
+        body: {
+            en: "Attends the fifth session of the Supreme Soviet of the RSFSR, 3rd convocation, as a delegate.",
+            ru: "Участвует как делегат в V сессии Верховного Совета РСФСР 3-го созыва.",
+            tg: "Ҳамчун вакил дар иҷлосияи V Шӯрои Олии РСФСР, даъвати 3-юм, иштирок мекунад.",
+        },
+    },
+    {
         id: "associate-professor-1957",
         displayYear: "1957",
         startYear: 1957,
@@ -309,6 +322,30 @@ const timelineEntries: CuratedTimelineEntry[] = [
             en: "Serves as the first rector of the Tajik State Polytechnic Institute in Dushanbe and leads its formative years.",
             ru: "Становится первым ректором Таджикского государственного политехнического института в Душанбе и руководит его становлением.",
             tg: "Нахустин ректори Донишкадаи давлатии политехникии Тоҷикистон дар Душанбе шуда, солҳои ташаккули онро роҳбарӣ мекунад.",
+        },
+    },
+    {
+        id: "honors-1961",
+        displayYear: "1961",
+        startYear: 1961,
+        category: "government",
+        major: false,
+        foldGroup: "formation-years",
+        body: {
+            en: "Receives the Order of Lenin and the Honorary Diploma of the Presidium of the Supreme Soviet of the Tajik SSR.",
+            ru: "Награждается орденом Ленина и Почетной грамотой Президиума Верховного Совета Таджикской ССР.",
+            tg: "Бо ордени Ленин ва Ифтихорномаи Президиуми Шӯрои Олии ҶШС Тоҷикистон сарфароз мегардад.",
+        },
+        notes: {
+            en: [
+                "The same year he is also honored by the Central Committee of the Communist Party of Tajikistan for his work with the journal “Kommunisti Tojikiston.”",
+            ],
+            ru: [
+                "В том же году он также отмечается ЦК Компартии Таджикистана за работу с журналом «Коммунисти Таджикистон».",
+            ],
+            tg: [
+                "Ҳамон сол ӯ инчунин аз ҷониби КМ Ҳизби коммунистии Тоҷикистон барои фаъолият бо маҷаллаи «Коммунисти Тоҷикистон» қадрдонӣ мешавад.",
+            ],
         },
     },
     {
@@ -360,7 +397,21 @@ const timelineEntries: CuratedTimelineEntry[] = [
         body: {
             en: "Elected a full member of the Academy of Sciences of the Tajik SSR and serves as its President until 1988.",
             ru: "Избирается действительным членом Академии наук Таджикской ССР и становится ее президентом до 1988 года.",
-            tg: "Узви пайвастаи Академияи илмҳои ҶШС Тоҷикистон интихоб шуда, то соли 1988 президенти он мегардад.",
+            tg: "Узви пурраи Академияи илмҳои ҶШС Тоҷикистон интихоб шуда, то соли 1988 президенти он мегардад.",
+        },
+    },
+    {
+        id: "ussr-deputy-and-friendship-1966-1969",
+        displayYear: "1966-1969",
+        startYear: 1966,
+        endYear: 1969,
+        category: "government",
+        major: false,
+        foldGroup: "state-rise",
+        body: {
+            en: "Serves as deputy of the Soviet of Nationalities of the Supreme Soviet of the USSR from the Vose constituency and chairs the Tajik Society of Friendship and Cultural Relations with Foreign Countries.",
+            ru: "Является депутатом Совета Национальностей Верховного Совета СССР от Восейского округа и возглавляет Таджикское общество дружбы и культурной связи с зарубежными странами.",
+            tg: "Вакили Шӯрои Миллатҳои Шӯрои Олии ИҶШС аз ҳавзаи Восеъ буда, ҳамзамон ба Ҷамъияти дӯстӣ ва равобити фарҳангӣ бо кишварҳои хориҷӣ роҳбарӣ мекунад.",
         },
     },
     {
@@ -371,9 +422,27 @@ const timelineEntries: CuratedTimelineEntry[] = [
         major: false,
         foldGroup: "state-rise",
         body: {
-            en: "Participates in the 55th Conference of the Inter-Parliamentary Union in Iran.",
-            ru: "Участвует в 55-й конференции Межпарламентского союза в Иране.",
-            tg: "Дар конфронси 55-уми Иттиҳоди байнипарлумонӣ дар Эрон иштирок мекунад.",
+            en: "Participates in the 55th Conference of the Inter-Parliamentary Union in Tehran, representing the Soviet parliamentary delegation.",
+            ru: "Участвует в 55-й конференции Межпарламентского союза в Тегеране в составе советской парламентской делегации.",
+            tg: "Дар конфронси 55-уми Иттиҳоди байнипарлумонӣ дар Теҳрон дар ҳайати ҳайати парлумонии шӯравӣ иштирок мекунад.",
+        },
+    },
+    {
+        id: "amsterdam-congress-1967",
+        displayYear: "1967",
+        startYear: 1967,
+        category: "academia",
+        major: false,
+        foldGroup: "state-rise",
+        body: {
+            en: "Presents a paper in English at the III International Congress on Logic, Methodology, and Philosophy of Science in Amsterdam.",
+            ru: "Выступает с докладом на английском языке на III Международном конгрессе по логике, методологии и философии науки в Амстердаме.",
+            tg: "Дар III Конгресси байналмилалӣ оид ба мантиқ, методология ва фалсафаи илм дар Амстердам ба забони англисӣ маърӯза мекунад.",
+        },
+        notes: {
+            en: ["The paper concerns scientific concepts related to the formula E = mc2."],
+            ru: ["Доклад посвящен научным понятиям, связанным с соотношением E = mc2."],
+            tg: ["Мавзӯи маърӯза ба мафҳумҳои илмии вобаста ба нисбати E = mc2 бахшида мешавад."],
         },
     },
     {
@@ -398,9 +467,9 @@ const timelineEntries: CuratedTimelineEntry[] = [
         major: false,
         foldGroup: "state-rise",
         body: {
-            en: "Chairs the permanent Aini Committee under the Presidium of the Academy of Sciences of Tajikistan.",
-            ru: "Возглавляет постоянный Комитет Айни при Президиуме Академии наук Таджикистана.",
-            tg: "Ба Кумитаи доимии Айнӣ дар назди Президиуми Академияи илмҳои Тоҷикистон роҳбарӣ мекунад.",
+            en: "Chairs the permanent Aini Committee under the Presidium of the Academy of Sciences.",
+            ru: "Возглавляет постоянный Комитет Айни при Президиуме Академии наук.",
+            tg: "Ба Кумитаи доимии Айнӣ дар назди Президиуми Академияи илмҳо роҳбарӣ мекунад.",
         },
     },
     {
@@ -423,9 +492,9 @@ const timelineEntries: CuratedTimelineEntry[] = [
         major: false,
         foldGroup: "international-rise",
         body: {
-            en: "Takes part in the UNESCO international seminar on the study of civilizations of Central Asia in Kabul and is elected deputy chairman of the organizing committee.",
-            ru: "Участвует в международном семинаре ЮНЕСКО по изучению цивилизаций Центральной Азии в Кабуле и избирается заместителем председателя оргкомитета.",
-            tg: "Дар семинари байналмилалии ЮНЕСКО оид ба омӯзиши тамаддунҳои Осиёи Марказӣ дар Кобул иштирок карда, муовини раиси кумитаи тадорукот интихоб мешавад.",
+            en: "In Kabul, takes part in the UNESCO seminar on the study of Central Asian civilizations and in the parallel international coordination meeting on archaeological research, where he is elected deputy chairman of the organizing committee.",
+            ru: "В Кабуле участвует в семинаре ЮНЕСКО по изучению цивилизаций Центральной Азии и в международном координационном совещании по археологическим исследованиям, где избирается заместителем председателя оргкомитета.",
+            tg: "Дар Кобул дар семинари ЮНЕСКО оид ба омӯзиши тамаддунҳои Осиёи Марказӣ ва ҳамчунин дар ҷаласаи байналмилалии ҳамоҳангсозӣ оид ба таҳқиқоти бостоншиносӣ иштирок карда, муовини раиси кумитаи тадорукот интихоб мешавад.",
         },
     },
     {
@@ -439,6 +508,30 @@ const timelineEntries: CuratedTimelineEntry[] = [
             en: "Approved in the academic title of professor in philosophy.",
             ru: "Утвержден в ученом звании профессора по философии.",
             tg: "Дар унвони илмии профессор аз рӯйи фалсафа тасдиқ мешавад.",
+        },
+    },
+    {
+        id: "india-symposia-1971",
+        displayYear: "1971",
+        startYear: 1971,
+        category: "unesco",
+        major: false,
+        foldGroup: "international-rise",
+        body: {
+            en: "Participates in the UNESCO symposium “Al-Biruni and Indian Science” in India and continues presenting on the scientific heritage of Central Asia.",
+            ru: "Участвует в симпозиуме ЮНЕСКО «Ал-Беруни и индийская наука» в Индии и продолжает выступать по научному наследию Центральной Азии.",
+            tg: "Дар симпозиуми ЮНЕСКО «Ал-Берунӣ ва илми ҳиндӣ» дар Ҳиндустон иштирок карда, суханрониҳои худро оид ба мероси илмии Осиёи Марказӣ идома медиҳад.",
+        },
+        notes: {
+            en: [
+                "The same year he also takes part in the XIII International Congress of the History of Science in Moscow and in scholarly sessions devoted to Hafez and Al-Biruni.",
+            ],
+            ru: [
+                "В том же году участвует в XIII Международном конгрессе по истории науки в Москве и в научных заседаниях, посвященных Хафизу и Ал-Беруни.",
+            ],
+            tg: [
+                "Ҳамон сол дар XIII Конгресси байналмилалии таърихи илм дар Москва ва ҳамоишҳои илмии бахшида ба Ҳофиз ва Ал-Берунӣ низ иштирок мекунад.",
+            ],
         },
     },
     {
@@ -505,11 +598,25 @@ const timelineEntries: CuratedTimelineEntry[] = [
         startYear: 1977,
         category: "academia",
         major: false,
-        foldGroup: "international-rise",
+        foldGroup: "late-soviet",
         body: {
             en: "Conferred the honorary title “Honored Worker of Science of the Tajik SSR.”",
             ru: "Удостаивается почетного звания «Заслуженный деятель науки Таджикской ССР».",
             tg: "Ба унвони фахрии «Ходими шоистаи илми ҶШС Тоҷикистон» сарфароз мегардад.",
+        },
+    },
+    {
+        id: "knowledge-chair-1977-1987",
+        displayYear: "1977-1987",
+        startYear: 1977,
+        endYear: 1987,
+        category: "government",
+        major: false,
+        foldGroup: "late-soviet",
+        body: {
+            en: "Chairs the Republican Society “Knowledge” of the Tajik SSR, linking scholarship, public lectures, and civic education.",
+            ru: "Возглавляет Республиканское общество «Знание» Таджикской ССР, соединяя науку, публичные лекции и просветительскую работу.",
+            tg: "Ба Ҷамъияти ҷумҳуриявии «Дониш»-и ҶШС Тоҷикистон роҳбарӣ карда, илм, лексияҳои оммавӣ ва маърифатпарвариро ба ҳам мепайвандад.",
         },
     },
     {
@@ -520,9 +627,20 @@ const timelineEntries: CuratedTimelineEntry[] = [
         category: "unesco",
         major: true,
         body: {
-            en: "Serves as President of the International Association for the Study of Cultures of Central Asia under UNESCO and as Deputy Chairman of the Soviet Committee of Solidarity of Asian and African Countries.",
-            ru: "Является президентом Международной ассоциации по изучению культур Центральной Азии при ЮНЕСКО и заместителем председателя Советского комитета солидарности стран Азии и Африки.",
-            tg: "Президенти Ассотсиатсияи байналмилалӣ оид ба омӯзиши фарҳангҳои Осиёи Марказӣ дар назди ЮНЕСКО ва муовини раиси Кумитаи советии ҳамбастагии кишварҳои Осиё ва Африқо мешавад.",
+            en: "Becomes President of the International Association for the Study of Cultures of Central Asia and, in the same period, serves as Deputy Chairman of the Soviet Committee of Solidarity of Asian and African Countries.",
+            ru: "Становится президентом Международной ассоциации по изучению культур Центральной Азии и в тот же период является заместителем председателя Советского комитета солидарности стран Азии и Африки.",
+            tg: "Президенти Ассотсиатсияи байналмилалӣ оид ба омӯзиши фарҳангҳои Осиёи Марказӣ гардида, ҳамзамон дар ин давра муовини раиси Кумитаи советии ҳамбастагии кишварҳои Осиё ва Африқо мешавад.",
+        },
+        notes: {
+            en: [
+                "In 1977 he is also confirmed as chairman of the Soviet committee for the study of Central Asian civilizations.",
+            ],
+            ru: [
+                "В 1977 году он также утверждается председателем советского комитета по изучению цивилизаций Центральной Азии.",
+            ],
+            tg: [
+                "Соли 1977 ҳамзамон раиси кумитаи шӯравӣ оид ба омӯзиши тамаддунҳои Осиёи Марказӣ тасдиқ мешавад.",
+            ],
         },
     },
     {
@@ -545,9 +663,22 @@ const timelineEntries: CuratedTimelineEntry[] = [
         category: "government",
         major: true,
         body: {
-            en: "Becomes laureate of the International Jawaharlal Nehru Prize; the award ceremony is later held in Moscow in 1983.",
-            ru: "Становится лауреатом Международной премии имени Джавахарлала Неру; церемония награждения проходит в Москве в 1983 году.",
-            tg: "Лауреати Мукофоти байналмилалии ба номи Ҷавоҳирлал Неру мегардад; маросими супоридани он баъдтар соли 1983 дар Москва баргузор мешавад.",
+            en: "Is named laureate of the International Jawaharlal Nehru Prize for 1979; the award ceremony takes place in Moscow in 1983.",
+            ru: "Становится лауреатом Международной премии имени Джавахарлала Неру за 1979 год; церемония вручения проходит в Москве в 1983 году.",
+            tg: "Лауреати Мукофоти байналмилалии ба номи Ҷавоҳирлал Неру барои соли 1979 дониста мешавад; маросими супурдан дар Москва соли 1983 баргузор мегардад.",
+        },
+    },
+    {
+        id: "caracas-interparliamentary-1979",
+        displayYear: "1979",
+        startYear: 1979,
+        category: "government",
+        major: false,
+        foldGroup: "late-soviet",
+        body: {
+            en: "Joins the parliamentary delegation of the Supreme Soviet of the USSR at the 66th Inter-Parliamentary Conference in Caracas.",
+            ru: "Входит в парламентскую делегацию Верховного Совета СССР на 66-й Межпарламентской конференции в Каракасе.",
+            tg: "Дар ҳайати парлумонии Шӯрои Олии ИҶШС дар конфронси 66-уми байнипарлумонӣ дар Каракас ширкат мекунад.",
         },
     },
     {
@@ -561,6 +692,17 @@ const timelineEntries: CuratedTimelineEntry[] = [
             en: "Plays a major editorial and organizational role in UNESCO’s multivolume “History of Civilizations of Central Asia.”",
             ru: "Играет ключевую редакторскую и организационную роль в многотомной ЮНЕСКОвской «Истории цивилизаций Центральной Азии».",
             tg: "Дар кори таҳрирӣ ва ташкилии бисёрҷилдаи ЮНЕСКО «Таърихи тамаддунҳои Осиёи Марказӣ» нақши калидӣ мебозад.",
+        },
+        notes: {
+            en: [
+                "In 1980 he joins the editorial committee; by 1995, at the fifth session in Beijing, he is again elected president of the International Scientific Committee and of the association behind the project.",
+            ],
+            ru: [
+                "В 1980 году входит в редакционный комитет; к пятой сессии 1995 года в Пекине вновь избирается президентом Международного научного комитета и ассоциации, стоящей за проектом.",
+            ],
+            tg: [
+                "Соли 1980 ба ҳайати кумитаи таҳририя ворид мешавад; дар иҷлосияи панҷуми соли 1995 дар Пекин дубора президенти Кумитаи байналмилалии илмӣ ва ассотсиатсияи пуштибони лоиҳа интихоб мегардад.",
+            ],
         },
     },
     {
@@ -577,6 +719,19 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
     },
     {
+        id: "india-ibn-sina-1981",
+        displayYear: "1981",
+        startYear: 1981,
+        category: "unesco",
+        major: false,
+        foldGroup: "late-soviet",
+        body: {
+            en: "Takes part in major Indo-Soviet scholarly meetings in Delhi and Bombay, including the millennium seminar on Ibn Sina and discussions on science and technology in India and Central Asia.",
+            ru: "Участвует в крупных индо-советских научных встречах в Дели и Бомбее, включая семинар к тысячелетию Ибн Сино и обсуждения науки и техники Индии и Центральной Азии.",
+            tg: "Дар ҳамоишҳои бузурги илмии ҳинду-шӯравӣ дар Деҳлӣ ва Бомбей, аз ҷумла семинари ҳазорасолаи Ибни Сино ва баҳсҳо оид ба илм ва техникаи Ҳиндустон ва Осиёи Марказӣ иштирок мекунад.",
+        },
+    },
+    {
         id: "veteran-of-labor-1984",
         displayYear: "1984",
         startYear: 1984,
@@ -587,6 +742,19 @@ const timelineEntries: CuratedTimelineEntry[] = [
             en: "Awarded the medal “Veteran of Labor” and confirmed as deputy of the Supreme Soviet of the USSR from the Garm constituency.",
             ru: "Награждается медалью «Ветеран труда» и утверждается депутатом Верховного Совета СССР от Гарминского округа.",
             tg: "Бо медали «Ветерани меҳнат» сарфароз шуда, вакили Шӯрои Олии ИҶШС аз ҳавзаи Ғарм тасдиқ мегардад.",
+        },
+    },
+    {
+        id: "international-committee-1985",
+        displayYear: "1985",
+        startYear: 1985,
+        category: "unesco",
+        major: false,
+        foldGroup: "late-soviet",
+        body: {
+            en: "Works in Paris with the international editorial committee for the UNESCO history project and combines the year with lectures and scientific diplomacy in Italy, Canada, and India.",
+            ru: "Работает в Париже с международным редакционным комитетом проекта истории ЮНЕСКО, совмещая этот год с лекциями и научной дипломатией в Италии, Канаде и Индии.",
+            tg: "Дар Париж бо кумитаи байналмилалии таҳририяи лоиҳаи таърихии ЮНЕСКО кор карда, ҳамзамон солро бо лексияҳо ва дипломатияи илмӣ дар Италия, Канада ва Ҳиндустон идома медиҳад.",
         },
     },
     {
@@ -603,9 +771,33 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
     },
     {
-        id: "paivand-1989-1996",
-        displayYear: "1989-1996",
+        id: "nehru-centenary-1989",
+        displayYear: "1989",
         startYear: 1989,
+        category: "unesco",
+        major: false,
+        foldGroup: "final-years",
+        body: {
+            en: "Travels to India for the centenary of Jawaharlal Nehru and presents a paper on cultural interconnections through the lens of Nehru’s thought.",
+            ru: "Едет в Индию к столетию Джавахарлала Неру и выступает с докладом о взаимосвязях культур через призму взглядов Неру.",
+            tg: "Ба муносибати садсолагии Ҷавоҳирлал Неру ба Ҳиндустон сафар карда, дар бораи робита ва таъсири мутақобили фарҳангҳо аз дидгоҳи Неру маърӯза мекунад.",
+        },
+        notes: {
+            en: [
+                "The same year he also takes part in the fourth session of the International Scientific Committee for the “History of Civilizations of Central Asia” in Paris.",
+            ],
+            ru: [
+                "В том же году участвует в четвертой сессии Международного научного комитета по «Истории цивилизаций Центральной Азии» в Париже.",
+            ],
+            tg: [
+                "Ҳамон сол дар иҷлосияи чоруми Кумитаи байналмилалии илмӣ оид ба «Таърихи тамаддунҳои Осиёи Марказӣ» дар Париж низ иштирок мекунад.",
+            ],
+        },
+    },
+    {
+        id: "paivand-1989-1996",
+        displayYear: "1990-1996",
+        startYear: 1990,
         endYear: 1996,
         category: "government",
         major: true,
@@ -613,6 +805,17 @@ const timelineEntries: CuratedTimelineEntry[] = [
             en: "Chairs “Paivand,” the society for scientific and cultural relations with compatriots abroad.",
             ru: "Возглавляет общество «Пайванд» по научным и культурным связям с соотечественниками за рубежом.",
             tg: "Ба ҷамъияти «Пайванд» оид ба робитаҳои илмӣ ва фарҳангӣ бо ҳамватанони бурунмарзӣ роҳбарӣ мекунад.",
+        },
+        notes: {
+            en: [
+                "RAG materials describe the society as having been organized in 1989, with Asimov publicly identified as its chairman by 1990.",
+            ],
+            ru: [
+                "Материалы RAG указывают, что общество было организовано в 1989 году, а к 1990 году Асимов уже публично фигурирует как его председатель.",
+            ],
+            tg: [
+                "Маводи RAG нишон медиҳанд, ки ҷамъият соли 1989 ташкил ёфта, то соли 1990 Асимов аллакай ба таври ошкор ҳамчун раиси он зикр мешавад.",
+            ],
         },
     },
     {
@@ -629,17 +832,55 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
     },
     {
-        id: "tajik-forums-1992-1995",
-        displayYear: "1992-1995",
+        id: "avila-1990",
+        displayYear: "1990",
+        startYear: 1990,
+        category: "unesco",
+        major: false,
+        foldGroup: "final-years",
+        body: {
+            en: "Joins the editorial board session for the “History of Civilizations of Central Asia” in Avila and in the same year speaks publicly in Dushanbe on Borbad, Aini, and national cultural memory.",
+            ru: "Участвует в сессии редакционной коллегии «Истории цивилизаций Центральной Азии» в Авиле и в том же году выступает в Душанбе по темам Борбада, Айни и национальной культурной памяти.",
+            tg: "Дар иҷлосияи ҳайати таҳририяи «Таърихи тамаддунҳои Осиёи Марказӣ» дар Авила иштирок карда, ҳамон сол дар Душанбе оид ба Борбад, Айнӣ ва хотираи миллии фарҳангӣ низ суханронӣ мекунад.",
+        },
+    },
+    {
+        id: "silk-road-1992",
+        displayYear: "1992",
         startYear: 1992,
-        endYear: 1995,
+        category: "unesco",
+        major: false,
+        foldGroup: "final-years",
+        body: {
+            en: "Participates in the international consultative committee meeting for the Silk Roads project in Delhi.",
+            ru: "Участвует в заседании международного консультативного комитета проекта «Шелковый путь» в Дели.",
+            tg: "Дар ҷаласаи кумитаи машваратии байналмилалии лоиҳаи «Роҳи Абрешим» дар Деҳлӣ иштирок мекунад.",
+        },
+    },
+    {
+        id: "dushanbe-forums-1995",
+        displayYear: "1995",
+        startYear: 1995,
         category: "government",
         major: false,
         foldGroup: "final-years",
         body: {
-            en: "Participates in major transnational Tajik and Persian cultural forums in Dushanbe, Moscow, Alma-Ata, and elsewhere during the early independence years.",
-            ru: "Участвует в крупных транснациональных таджикских и персоязычных культурных форумах в Душанбе, Москве, Алма-Ате и других городах в первые годы независимости.",
-            tg: "Дар солҳои аввали истиқлол дар форумҳои бузурги фарҳангии тоҷикону форсизабонон дар Душанбе, Москва, Алмаато ва дигар ҷойҳо иштирок мекунад.",
+            en: "Takes part in major conferences in Dushanbe on Tajikistan’s geopolitics and on Russia in the historical destinies of Central Asian peoples.",
+            ru: "Участвует в крупных конференциях в Душанбе по геополитике Таджикистана и по роли России в исторических судьбах народов Центральной Азии.",
+            tg: "Дар конфронсҳои муҳими Душанбе оид ба геополитикаи Тоҷикистон ва нақши Русия дар сарнавишти таърихии халқҳои Осиёи Марказӣ иштирок мекунад.",
+        },
+    },
+    {
+        id: "global-forums-1995",
+        displayYear: "1995",
+        startYear: 1995,
+        category: "unesco",
+        major: false,
+        foldGroup: "final-years",
+        body: {
+            en: "Appears at international meetings in Islamabad, Tbilisi, and Copenhagen, keeping Central Asian scholarship present in late-career global forums.",
+            ru: "Участвует в международных встречах в Исламабаде, Тбилиси и Копенгагене, сохраняя присутствие центральноазиатской науки на мировых форумах позднего периода.",
+            tg: "Дар мулоқотҳои байналмилалӣ дар Исломобод, Тбилисӣ ва Копенгаген иштирок карда, ҳузури илми Осиёи Марказиро дар форумҳои ҷаҳонии солҳои охир нигоҳ медорад.",
         },
     },
     {
@@ -661,9 +902,21 @@ const timelineEntries: CuratedTimelineEntry[] = [
         category: "unesco",
         major: true,
         body: {
-            en: "Makes his final trip to UNESCO headquarters in Paris, advancing publication work on the “History of Civilizations of Central Asia” and related international projects.",
-            ru: "Совершает последнюю поездку в штаб-квартиру ЮНЕСКО в Париже, продвигая публикацию «Истории цивилизаций Центральной Азии» и связанных международных проектов.",
-            tg: "Сафари охирини худро ба қароргоҳи ЮНЕСКО дар Париж анҷом дода, нашри «Таърихи тамаддунҳои Осиёи Марказӣ» ва лоиҳаҳои вобастаи байналмилалиро пеш мебарад.",
+            en: "In Paris, joins UNESCO-related work on the “History of Civilizations of Central Asia” and speaks at the Sorbonne on the unity of the Persian-Tajik literary language.",
+            ru: "В Париже участвует в работе, связанной с ЮНЕСКОвской «Историей цивилизаций Центральной Азии», и выступает в Сорбонне о единстве персидско-таджикского литературного языка.",
+            tg: "Дар Париж дар кори вобаста ба «Таърихи тамаддунҳои Осиёи Марказӣ»-и ЮНЕСКО иштирок карда, дар Сорбонна дар бораи ягонагии забони адабии форсӣ-тоҷикӣ суханронӣ мекунад.",
+        },
+    },
+    {
+        id: "final-death-1996",
+        displayYear: "1996",
+        startYear: 1996,
+        category: "life",
+        major: true,
+        body: {
+            en: "Dies tragically in 1996, leaving behind a public, scholarly, and institutional legacy that shaped modern Tajik intellectual life.",
+            ru: "Трагически уходит из жизни в 1996 году, оставив после себя общественное, научное и институциональное наследие, сформировавшее современную таджикскую интеллектуальную жизнь.",
+            tg: "Соли 1996 ба таври фоҷиавӣ даргузашта, мероси ҷамъиятӣ, илмӣ ва муассисавие бар ҷой мегузорад, ки ҳаёти зеҳнии муосири тоҷикро шакл додааст.",
         },
     },
 ];

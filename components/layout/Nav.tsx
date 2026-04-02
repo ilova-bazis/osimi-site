@@ -70,6 +70,15 @@ export default function Nav({ locale, content }: NavProps) {
                         className="nav__logo"
                         priority
                     />
+                    {/*<p
+                        style={{
+                            fontFamily: '"L", cursive',
+                            fontStyle: "italic",
+                            fontSize: "2.0rem",
+                        }}
+                    >
+                        OSIMI
+                    </p>*/}
                 </Link>
 
                 <button
