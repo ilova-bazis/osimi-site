@@ -75,6 +75,36 @@ export default function WorksPage({ locale, content }: WorksPageProps) {
         </div>
       </section>
 
+      <section className="works-public-excerpts section section--ivory" aria-labelledby="works-public-excerpts-title">
+        <div className="container">
+          <div className="works-public-excerpts__frame">
+            <div className="works-public-excerpts__layout">
+              <div className="works-public-excerpts__intro">
+                <p className="label">{content.publicExcerpts.label}</p>
+                <h2 className="section-title" id="works-public-excerpts-title">
+                  {content.publicExcerpts.title}
+                </h2>
+                <div className="divider works-public-excerpts__divider" />
+                <p className="section-body">{content.publicExcerpts.intro}</p>
+              </div>
+
+              <div className="works-public-excerpts__grid">
+                {content.publicExcerpts.items.map((item) => (
+                  <article className="works-public-excerpt-card" key={item.href}>
+                    <h3 className="works-public-excerpt-card__title">{item.title}</h3>
+                    <p className="works-public-excerpt-card__source">{item.source}</p>
+                    <p className="works-public-excerpt-card__note">{item.note}</p>
+                    <a href={item.href} className="btn btn--outline works-public-excerpt-card__link" target="_blank" rel="noreferrer">
+                      {item.linkLabel}
+                    </a>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="works-related-books section section--white" aria-labelledby="works-related-books-title">
         <div className="container">
           <div className="works-selected__intro">

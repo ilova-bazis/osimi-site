@@ -121,7 +121,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
         collection: {
             label: "Selected Quotations",
             title: "Curated Starter Collection",
-            intro: "This selection now combines the site's earlier quote set with quotations checked against the repaired local RAG corpus. It remains selective, but it now includes several source-backed additions drawn from interviews, reminiscences, and published conversations.",
+            intro: "This selection combines the site's earlier quote set with quotations traced to interviews, reminiscences, and published conversations. It remains selective, but it now includes a stronger group of verified additions.",
             emptyLabel: "No quotes match this theme.",
             allLabel: "All",
             previousLabel: "Previous",
@@ -136,7 +136,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     text: "The worth of a person's thoughts is a measure of his or her own generosity.",
                     originalText:
                         "The worth of a person's thoughts is a measure of his or her own generosity.",
-                    sourceNote: "Homepage quote set; still awaiting direct source confirmation",
+                    sourceNote: "Legacy site quote collection; direct source confirmation still pending",
                 },
                 {
                     id: "children",
@@ -234,14 +234,14 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     id: "humanistic-culture",
                     theme: "unity",
                     text: "The historical experience of the formation and flowering of humanistic culture teaches us that success is achieved where people cooperate with each other, share their achievements, thoughts and ideas, and work in the name of a single humane goal — to serve humanity.",
-                    sourceNote: "assets/quotes.md",
+                    sourceNote: "Legacy quote collection; source verification still pending",
                 },
             ],
         },
         note: {
             label: "Editorial Note",
             title: "This Section Will Expand Carefully",
-            body: "The next step for this section is to keep replacing inherited legacy quotations with source-backed originals and reviewed translations. It is already more reliable than the first version, but it should continue growing through careful verification rather than rapid accumulation.",
+            body: "This collection will continue to grow over time, with additional quotations added as reliable original texts and strong translations are identified.",
         },
     },
     tg: {
@@ -306,7 +306,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
         collection: {
             label: "Иқтибосҳои интихобӣ",
             title: "Маҷмуаи ибтидоии санҷидашуда",
-            intro: "Ин интихоб акнун на танҳо аз иқтибосҳои пешини сомона, балки аз ҷумлаҳое низ таркиб ёфтааст, ки бо корпуси маҳаллии RAG дубора санҷида шудаанд. Ҳанӯз пурра нест, аммо акнун чанд изҳороти муҳими ӯро бо такя ба манбаъҳои равшантар дар бар мегирад.",
+            intro: "Ин интихоб аз иқтибосҳои пешини сомона ва ҷумлаҳое таркиб ёфтааст, ки ба мусоҳибаҳо, ёддоштҳо ва суҳбатҳои чопшуда пайгирӣ мешаванд. Он ҳанӯз пурра нест, аммо акнун чанд изҳороти муҳими ӯро бо такя ба манбаъҳои равшантар дар бар мегирад.",
             emptyLabel: "Барои ин мавзӯъ иқтибосе нест.",
             allLabel: "Ҳама",
             previousLabel: "Пешина",
@@ -319,7 +319,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     id: "generosity",
                     theme: "generosity",
                     text: "Арзиши андешаҳои инсон меъёри саховатмандии худи ӯст.",
-                    sourceNote: "Маҷмуаи иқтибосҳои саҳифаи асосӣ; ҳанӯз ба манбаи мустақим пурра пайваст нашудааст",
+                    sourceNote: "Маҷмуаи меросии иқтибосҳои сомона; манбаи мустақим ҳанӯз пурра мушаххас нашудааст",
                 },
                 {
                     id: "children",
@@ -403,14 +403,14 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     id: "humanistic-culture",
                     theme: "unity",
                     text: "Аз таҷрибаи таърихии ташаккул ва нашъунамои фарҳанги гуманистӣ меомӯзем, ки дастовардҳо дар он ҷое пайдо мешаванд, ки одамон бо ҳамдигар ҳамкорӣ мекунанд, мубодилаи дастовардҳо, андешаҳо ва ғояҳои худ мекунанд, ба хотири ҳадафи ягонаи инсонӣ — хидмат ба башарият.",
-                    sourceNote: "assets/quotes.md",
+                    sourceNote: "Маҷмуаи меросии иқтибосҳо; санҷиши манбаъ ҳанӯз пурра анҷом нашудааст",
                 },
             ],
         },
         note: {
             label: "Ёддошти таҳрирӣ",
             title: "Ин бахш боэҳтиёт густариш меёбад",
-            body: "Қадами баъдӣ барои ин бахш он аст, ки иқтибосҳои меросӣ тадриҷан бо шаклҳои аслӣ ва тарҷумаҳои бознигаришуда иваз карда шаванд. Ин саҳифа аллакай нисбат ба версияи аввал боэътимодтар аст, вале бояд танҳо бо санҷиши бодиққат густариш ёбад.",
+            body: "Ин маҷмуа тадриҷан густариш меёбад ва иқтибосҳои нави он замоне афзуда хоҳанд шуд, ки шаклҳои аслӣ ва тарҷумаҳои устувори онҳо дастрас гарданд.",
         },
     },
     ru: {
@@ -476,7 +476,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
         collection: {
             label: "Избранные цитаты",
             title: "Начальная проверенная подборка",
-            intro: "Эта подборка теперь сочетает прежний набор цитат сайта с высказываниями, перепроверенными по обновлённому локальному корпусу RAG. Она по-прежнему выборочна, но уже включает несколько новых цитат, подтверждённых интервью, воспоминаниями и опубликованными беседами.",
+            intro: "Эта подборка сочетает прежний набор цитат сайта с высказываниями, которые удалось проследить до интервью, воспоминаний и опубликованных бесед. Она по-прежнему выборочна, но уже включает несколько новых, лучше подтверждённых цитат.",
             emptyLabel: "Для этой темы цитат нет.",
             allLabel: "Все",
             previousLabel: "Назад",
@@ -489,7 +489,7 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     id: "generosity",
                     theme: "generosity",
                     text: "Ценность мыслей человека есть мера его собственной щедрости.",
-                    sourceNote: "Подборка цитат на главной странице; прямое подтверждение источником пока не найдено",
+                    sourceNote: "Наследуемая подборка цитат сайта; прямое подтверждение источником пока не найдено",
                 },
                 {
                     id: "children",
@@ -585,14 +585,14 @@ const quotesContent: Record<Locale, QuotesPageContent> = {
                     id: "humanistic-culture",
                     theme: "unity",
                     text: "Исторический опыт становления и расцвета гуманистической культуры учит нас, что успех добывается там, где люди сотрудничают друг с другом, делятся своими достижениями, мыслями и идеями, работают во имя единой гуманной цели — служить человечеству.",
-                    sourceNote: "assets/quotes.md",
+                    sourceNote: "Наследуемая подборка цитат; проверка источника пока не завершена",
                 },
             ],
         },
         note: {
             label: "Редакторская заметка",
             title: "Этот раздел будет расширяться осторожно",
-            body: "Следующий шаг для этого раздела - постепенно заменять унаследованные цитаты выверенными оригиналами и проверенными переводами. Уже сейчас страница надёжнее первой версии, но расширяться она должна только через аккуратную верификацию, а не через быстрое накопление материала.",
+            body: "Эта подборка будет постепенно расширяться, по мере того как будут находиться надёжные оригиналы и убедительные переводы новых цитат.",
         },
     },
 };

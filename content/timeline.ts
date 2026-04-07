@@ -831,13 +831,13 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
         notes: {
             en: [
-                "Updated RAG materials now support 1989 as the society's starting point, while a 1990 interview already identifies Asimov publicly as its chairman.",
+                "The society took shape in 1989, and by a 1990 published interview Asimov already appears publicly as its chairman.",
             ],
             ru: [
-                "Обновленные материалы RAG теперь поддерживают 1989 год как стартовую точку общества, а в интервью 1990 года Асимов уже публично фигурирует как его председатель.",
+                "Общество оформилось в 1989 году, а в опубликованном интервью 1990 года Асимов уже публично фигурирует как его председатель.",
             ],
             tg: [
-                "Маводи навшудаи RAG акнун соли 1989-ро ҳамчун нуқтаи оғози ҷамъият тасдиқ мекунанд ва дар мусоҳибаи соли 1990 Асимов аллакай ба таври ошкор ҳамчун раиси он зикр мешавад.",
+                "Ҷамъият соли 1989 шакл гирифт ва дар мусоҳибаи чопшудаи соли 1990 Асимов аллакай ба таври ошкор ҳамчун раиси он зикр мешавад.",
             ],
         },
     },

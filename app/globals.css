@@ -1742,6 +1742,92 @@ a {
     line-height: 1.8;
 }
 
+.works-public-excerpts__frame {
+    position: relative;
+    padding: 40px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.45)),
+        var(--ivory-d);
+    border: 1px solid rgba(44, 44, 44, 0.08);
+    box-shadow: 0 18px 46px rgba(44, 44, 44, 0.06);
+}
+.works-public-excerpts__frame::before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(201, 168, 76, 0.45);
+    pointer-events: none;
+}
+.works-public-excerpts__layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
+    gap: 40px;
+    align-items: start;
+}
+.works-public-excerpts__intro {
+    padding-right: 16px;
+}
+.works-public-excerpts__divider {
+    margin-top: 0;
+}
+.works-public-excerpts__intro .section-body {
+    max-width: 34ch;
+}
+.works-public-excerpts__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+.works-public-excerpt-card {
+    position: relative;
+    min-height: 100%;
+    display: grid;
+    align-content: start;
+    gap: 0;
+    padding: 30px 28px 28px;
+    background: rgba(255, 255, 255, 0.88);
+    border-top: 2px solid var(--gold);
+    box-shadow: 0 14px 34px rgba(44, 44, 44, 0.05);
+}
+.works-public-excerpt-card::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    border-top: 1px solid rgba(201, 168, 76, 0.55);
+    border-right: 1px solid rgba(201, 168, 76, 0.55);
+}
+.works-public-excerpt-card__title {
+    font-family: var(--serif);
+    font-size: clamp(24px, 2.4vw, 32px);
+    font-weight: 400;
+    line-height: 1.16;
+    color: var(--charcoal);
+    margin-bottom: 14px;
+    max-width: 14ch;
+}
+.works-public-excerpt-card__source {
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.45);
+}
+.works-public-excerpt-card__note {
+    color: var(--charcoal-l);
+    line-height: 1.8;
+}
+.works-public-excerpt-card__link {
+    justify-self: start;
+    margin-top: 22px;
+}
+
 .works-related-books__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3037,6 +3123,22 @@ a {
     }
     .works-entry__title {
         font-size: 26px;
+    }
+    .works-public-excerpts__frame {
+        padding: 28px;
+    }
+    .works-public-excerpts__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .works-public-excerpts__intro {
+        padding-right: 0;
+    }
+    .works-public-excerpts__intro .section-body {
+        max-width: 100%;
+    }
+    .works-public-excerpts__grid {
+        grid-template-columns: 1fr;
     }
 
     .timeline-entry {
