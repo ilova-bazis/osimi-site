@@ -184,7 +184,7 @@ const homeContent: Record<Locale, HomePageContent> = {
                 'Muhammad Saifiddinovich Asimov received his qualification as a physicist from the Physics and Mathematics Faculty of Uzbek State University (1937-1941). He served with distinction in the Second World War, receiving the medal "For the Defense of Leningrad," the Order of the Patriotic War (1st degree), and other military honors.',
                 'Returning home, he taught physics and led academic departments before pursuing graduate study in Moscow, where he defended his candidate thesis on "Space and Time as Basic Forms of Matter Existence" (1952-1955), laying the philosophical ground for a lifetime of interdisciplinary inquiry.',
                 "In 1956 he was appointed the first rector of the Tajik State Polytechnic Institute, building it from the ground up. By 1965 he was elected President of the Academy of Sciences of Tajikistan, a role he would hold for twenty-three transformative years.",
-                "Through UNESCO, he led the publication of the six-volume History of Civilizations of Central Asia and participated in scholarly forums across more than thirty countries - from India and Japan to France, Cuba, and the United States.",
+                "Through UNESCO-linked scholarly work, he helped lead the long-term publication of the six-volume History of Civilizations of Central Asia and participated in major forums across Asia, Europe, and the Americas.",
             ],
         },
         legacy: {
@@ -234,9 +234,9 @@ const homeContent: Record<Locale, HomePageContent> = {
             cta: "Explore Works and Ideas",
             pullLabel: "From his writings",
             pullQuote:
-                "The worth of a person's thoughts is a measure of his or her own generosity.",
+                "The chief weapon of a person - and especially of a scholar - is deep, comprehensive knowledge of the problem and impeccable logic.",
             attribution: "Muhammad Osimi",
-            note: "His books were published in Russian, English, German, Farsi, and Arabic. His major works include Matter and the Physical Picture of the World (1966), The Concept of Matter and the Problem of Physical Reality (1970), and the eight-volume Tajik Soviet Encyclopedia (1978).",
+            note: "His books were published in Russian, English, German, Farsi, and Arabic. His major works include Matter and the Physical Picture of the World (1966), The Concept of Matter and the Problem of Physical Reality (1970), and the eight-volume Tajik Soviet Encyclopedia, published across 1978-1988.",
         },
         documentary: {
             label: "The Film",
@@ -257,16 +257,16 @@ const homeContent: Record<Locale, HomePageContent> = {
             title: "Wisdom That Endures",
             quotes: [
                 {
-                    text: "The worth of a person's thoughts is a measure of his or her own generosity.",
-                    theme: "On Generosity",
+                    text: "The chief weapon of a person - and especially of a scholar - is deep, comprehensive knowledge of the problem and impeccable logic.",
+                    theme: "On Knowledge",
                     originalText:
-                        "The worth of a person's thoughts is a measure of his or her own generosity.",
+                        "Главным оружием человека и особенно ученого является глубокое всестороннее знание проблемы и безукоризненная логика.",
                 },
                 {
-                    text: "Children must be respected and their self-worth should not be damaged.",
+                    text: "A child must be respected; one must not wound the child's sense of dignity.",
                     theme: "On Children",
                     originalText:
-                        "Children must be respected and their self-worth should not be damaged.",
+                        "Фарзандро бояд эҳтиром кард, бояд ба иззати нафси ӯ нарасид.",
                 },
                 {
                     text: "Men of culture are the Hosts of History, men of politics are the Guests.",
@@ -354,7 +354,7 @@ const homeContent: Record<Locale, HomePageContent> = {
                 "Муҳаммад Сайфиддинович Осимӣ таҳсили олии худро дар факултаи физика ва математикаи Донишгоҳи давлатии Ӯзбекистон ба номи А. Навоӣ (1937-1941) анҷом дода, ихтисоси физикаро гирифт. Ӯ дар Ҷанги Бузурги Ватанӣ бо шараф хидмат карда, бо медали «Барои мудофиаи Ленинград», ордени Ҷанги Ватании дараҷаи якум ва дигар мукофотҳои ҷангӣ сарфароз гардид.",
                 "Пас аз бозгашт ба ватан, ӯ аз физика дарс дод ва ба кафедраҳои илмӣ роҳбарӣ кард, сипас дар Москва таҳсили баъдидипломиро идома дода, рисолаи номзадии худро дар мавзуи «Фазо ва вақт ҳамчун шаклҳои асосии мавҷудияти материя» ҳимоя намуд ва барои фаъолияти байнисоҳавии минбаъдаи худ заминаи фалсафӣ гузошт.",
                 "Соли 1956 ӯ аввалин ректори Донишкадаи давлатии политехникии Тоҷикистон таъин шуд ва барои бунёди он аз оғоз тамоми нерӯ ва таҷрибаи худро сарф кард. Соли 1965 бошад, президенти Академияи илмҳои Тоҷикистон интихоб гардид ва ин мақомро бисту се соли сарнавиштсоз ба зимма дошт.",
-                "Тавассути ЮНЕСКО ӯ ба нашри шашҷилдаи «Таърихи тамаддунҳои Осиёи Марказӣ» роҳбарӣ намуд ва дар форумҳои илмии зиёда аз сӣ кишвар - аз Ҳиндустон ва Ҷопон то Фаронса, Куба ва Иёлоти Муттаҳида - ширкат варзид.",
+                "Тавассути фаъолияти илмии вобаста ба ЮНЕСКО ӯ дар пешбурди нашри дарозмуддати шашҷилдаи «Таърихи тамаддунҳои Осиёи Марказӣ» саҳми калидӣ гирифт ва дар форумҳои муҳими илмӣ дар Осиё, Аврупо ва Амрико иштирок намуд.",
             ],
         },
         legacy: {
@@ -403,9 +403,9 @@ const homeContent: Record<Locale, HomePageContent> = {
             ],
             cta: "Осор ва андешаҳоро бинед",
             pullLabel: "Аз навиштаҳои ӯ",
-            pullQuote: "Арзиши андешаҳои инсон меъёри саховатмандии худи ӯст.",
+            pullQuote: "Аслиҳаи асосии инсон ва махсусан олим донишҳои амиқу фарогири масъала ва мантиқи беайб аст.",
             attribution: "Муҳаммад Осимӣ",
-            note: "Осори ӯ ба забонҳои русӣ, англисӣ, олмонӣ, форсӣ ва арабӣ нашр шудаанд. Аз ҷумлаи корҳои муҳимаш «Материя ва манзараи физикии олам» (1966), «Мафҳуми материя ва масъалаи воқеияти физикӣ» (1970) ва «Энсиклопедияи Советии Тоҷик» дар ҳашт ҷилд (1978) мебошанд.",
+            note: "Осори ӯ ба забонҳои русӣ, англисӣ, олмонӣ, форсӣ ва арабӣ нашр шудаанд. Аз ҷумлаи корҳои муҳимаш «Материя ва манзараи физикии олам» (1966), «Мафҳуми материя ва масъалаи воқеияти физикӣ» (1970) ва «Энсиклопедияи Советии Тоҷик» дар ҳашт ҷилд, ки солҳои 1978-1988 нашр шудааст, мебошанд.",
         },
         documentary: {
             label: "Филм",
@@ -427,16 +427,16 @@ const homeContent: Record<Locale, HomePageContent> = {
             title: "Ҳикмате, ки мемонад",
             quotes: [
                 {
-                    text: "Арзиши андешаҳои инсон меъёри саховатмандии худи ӯст.",
-                    theme: "Дар бораи саховат",
+                    text: "Аслиҳаи асосии инсон ва махсусан олим донишҳои амиқу фарогири масъала ва мантиқи беайб аст.",
+                    theme: "Дар бораи дониш",
                     originalText:
-                        "Арзиши андешаҳои инсон меъёри саховатмандии худи ӯст.",
+                        "Главным оружием человека и особенно ученого является глубокое всестороннее знание проблемы и безукоризненная логика.",
                 },
                 {
-                    text: "Кӯдаконро бояд эҳтиром кард ва шаъну эътибори онҳоро набояд кост.",
+                    text: "Фарзандро бояд эҳтиром кард, бояд ба иззати нафси ӯ нарасид.",
                     theme: "Дар бораи кӯдакон",
                     originalText:
-                        "Кӯдаконро бояд эҳтиром кард ва шаъну эътибори онҳоро набояд кост.",
+                        "Фарзандро бояд эҳтиром кард, бояд ба иззати нафси ӯ нарасид.",
                 },
                 {
                     text: "Мардуми фарҳанг мизбонони таъриханд, мардуми сиёсат меҳмонони он.",
@@ -524,7 +524,7 @@ const homeContent: Record<Locale, HomePageContent> = {
                 "Мухаммад Сайфиддинович Асимов получил квалификацию физика на физико-математическом факультете Узбекского государственного университета имени А. Навои (1937-1941). Во время Второй мировой войны он служил с отличием и был награжден медалью «За оборону Ленинграда», орденом Отечественной войны I степени и рядом других боевых наград.",
                 "Вернувшись на родину, он преподавал физику, возглавлял кафедры и продолжил научную подготовку в Москве, где защитил кандидатскую диссертацию на тему «Пространство и время как основные формы бытия материи», заложив философскую основу для дальнейшей междисциплинарной работы.",
                 "В 1956 году он был назначен первым ректором Таджикского государственного политехнического института и фактически создавал его с нуля. В 1965 году его избрали президентом Академии наук Таджикистана, и этот пост он занимал двадцать три преобразующих года.",
-                "Через ЮНЕСКО он возглавил публикацию шеститомной «Истории цивилизаций Центральной Азии» и участвовал в научных форумах более чем в тридцати странах - от Индии и Японии до Франции, Кубы и Соединенных Штатов.",
+                "Через связанную с ЮНЕСКО научную деятельность он сыграл ключевую роль в долгосрочной подготовке шеститомной «Истории цивилизаций Центральной Азии» и участвовал в крупных научных форумах в Азии, Европе и Америке.",
             ],
         },
         legacy: {
@@ -574,9 +574,9 @@ const homeContent: Record<Locale, HomePageContent> = {
             cta: "Смотреть труды и идеи",
             pullLabel: "Из его работ",
             pullQuote:
-                "Ценность мыслей человека есть мера его собственной щедрости.",
+                "Главное оружие человека, и особенно учёного, - глубокое всестороннее знание проблемы и безукоризненная логика.",
             attribution: "Мухаммад Осими",
-            note: "Его книги выходили на русском, английском, немецком, фарси и арабском языках. Среди важнейших работ - «Материя и физическая картина мира» (1966), «Понятие материи и проблема физической реальности» (1970) и восьмитомная «Таджикская советская энциклопедия» (1978).",
+            note: "Его книги выходили на русском, английском, немецком, фарси и арабском языках. Среди важнейших работ - «Материя и физическая картина мира» (1966), «Понятие материи и проблема физической реальности» (1970) и восьмитомная «Таджикская советская энциклопедия», публиковавшаяся в 1978-1988 годах.",
         },
         documentary: {
             label: "Фильм",
@@ -597,16 +597,16 @@ const homeContent: Record<Locale, HomePageContent> = {
             title: "Мудрость, которая остается",
             quotes: [
                 {
-                    text: "Ценность мыслей человека есть мера его собственной щедрости.",
-                    theme: "О щедрости",
+                    text: "Главное оружие человека, и особенно учёного, - глубокое всестороннее знание проблемы и безукоризненная логика.",
+                    theme: "О знании",
                     originalText:
-                        "Ценность мыслей человека есть мера его собственной щедрости.",
+                        "Главным оружием человека и особенно ученого является глубокое всестороннее знание проблемы и безукоризненная логика.",
                 },
                 {
-                    text: "Детей нужно уважать, и их чувство собственного достоинства нельзя разрушать.",
+                    text: "Ребёнка нужно уважать, нельзя задевать его чувство собственного достоинства.",
                     theme: "О детях",
                     originalText:
-                        "Детей нужно уважать, и их чувство собственного достоинства нельзя разрушать.",
+                        "Фарзандро бояд эҳтиром кард, бояд ба иззати нафси ӯ нарасид.",
                 },
                 {
                     text: "Люди культуры - хозяева истории, люди политики - ее гости.",

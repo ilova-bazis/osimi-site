@@ -473,6 +473,29 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
     },
     {
+        id: "kushan-symposium-1968",
+        displayYear: "1968",
+        startYear: 1968,
+        category: "unesco",
+        major: true,
+        body: {
+            en: "Co-leads the major international conference in Dushanbe on the history, archaeology, and art of Central Asia in the Kushan period, helping establish the city as a serious UNESCO-linked scholarly venue.",
+            ru: "Совместно возглавляет крупную международную конференцию в Душанбе по истории, археологии и искусству Центральной Азии кушанского периода, способствуя утверждению города как важной площадки науки, связанной с ЮНЕСКО.",
+            tg: "Ҳамроҳ бо дигарон ба конфронси бузурги байналмилалӣ дар Душанбе оид ба таърих, бостоншиносӣ ва санъати Осиёи Марказӣ дар давраи Кӯшониён роҳбарӣ карда, барои ҳамчун маркази ҷиддии илми вобаста ба ЮНЕСКО шинохта шудани шаҳр мусоидат менамояд.",
+        },
+        notes: {
+            en: [
+                "Contemporary accounts say he mobilized the full scholarly capacity of the Tajik Academy for the forum and prepared it with his study “Science of Central Asia in the Kushan Era and the Ways of Its Study.”",
+            ],
+            ru: [
+                "Современники отмечали, что он привел в движение весь научный потенциал Таджикской академии и подготовил форум своей работой «Наука Средней Азии кушанской эпохи и пути её изучения».",
+            ],
+            tg: [
+                "Шоҳидони ҳамон давра менавиштанд, ки ӯ тамоми нерӯи илмии Академияи Тоҷикистонро барои ин форум сафарбар карда, онро бо асари худ «Илми Осиёи Миёна дар давраи Кӯшониён ва роҳҳои омӯзиши он» омода сохт.",
+            ],
+        },
+    },
+    {
         id: "doctoral-thesis-1970",
         displayYear: "1970",
         startYear: 1970,
@@ -796,8 +819,8 @@ const timelineEntries: CuratedTimelineEntry[] = [
     },
     {
         id: "paivand-1989-1996",
-        displayYear: "1990-1996",
-        startYear: 1990,
+        displayYear: "1989-1996",
+        startYear: 1989,
         endYear: 1996,
         category: "government",
         major: true,
@@ -808,13 +831,13 @@ const timelineEntries: CuratedTimelineEntry[] = [
         },
         notes: {
             en: [
-                "RAG materials describe the society as having been organized in 1989, with Asimov publicly identified as its chairman by 1990.",
+                "Updated RAG materials now support 1989 as the society's starting point, while a 1990 interview already identifies Asimov publicly as its chairman.",
             ],
             ru: [
-                "Материалы RAG указывают, что общество было организовано в 1989 году, а к 1990 году Асимов уже публично фигурирует как его председатель.",
+                "Обновленные материалы RAG теперь поддерживают 1989 год как стартовую точку общества, а в интервью 1990 года Асимов уже публично фигурирует как его председатель.",
             ],
             tg: [
-                "Маводи RAG нишон медиҳанд, ки ҷамъият соли 1989 ташкил ёфта, то соли 1990 Асимов аллакай ба таври ошкор ҳамчун раиси он зикр мешавад.",
+                "Маводи навшудаи RAG акнун соли 1989-ро ҳамчун нуқтаи оғози ҷамъият тасдиқ мекунанд ва дар мусоҳибаи соли 1990 Асимов аллакай ба таври ошкор ҳамчун раиси он зикр мешавад.",
             ],
         },
     },
